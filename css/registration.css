@@ -1,0 +1,67 @@
+section tr td input{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+}
+
+.tableBox {
+    padding: 10px;
+    float: left;
+    height: 50px;
+    margin-top: 15px;
+    width: 100%
+}
+
+.photo {
+    margin-bottom: 15px;
+}
+.updatePhoto {
+    width: 47%;
+    margin-bottom: 150px;
+}
+
+.address.tableBox {
+    width: 98%;
+    border: solid 1px #4d4545;
+    height: 100%;
+    border-radius: 6px;
+    margin-left: 1%;
+    margin-top: 6%;
+}
+
+.address select {
+    width: 100% !important;
+}
+
+input {
+    width: 100%;
+    border: solid #7b4c4c 1px;
+    font-size: 21px;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.submission {
+    
+    margin: 10px;
+}
+
+.submission input {
+    background: #4B717B;
+    width: 150px;
+    height: 38px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.tableBox img {
+    width: 150px !important;
+    height: 125px;
+}
+
+.loguser, .logpass {
+    float: inherit;
+}

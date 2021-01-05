@@ -1,0 +1,66 @@
+CREATE TABLE IF NOT EXISTS `division` (
+ `division_id` int(11) NOT NULL AUTO_INCREMENT,
+ `division_name` varchar(50) NOT NULL,
+ PRIMARY KEY (`division_id`)
+ );
+ 
+CREATE TABLE IF NOT EXISTS `district` (
+ `district_id` int(11) NOT NULL AUTO_INCREMENT,
+ `district_name` varchar(50) NOT NULL,
+ `division_id` varchar(50) NOT NULL,
+ PRIMARY KEY (`district_id`)
+ );
+
+CREATE TABLE IF NOT EXISTS `thana` ( 
+`thana_id` int(11) NOT NULL AUTO_INCREMENT, 
+`thana_name` varchar(50) NOT NULL, 
+`district_id` varchar(50) NOT NULL, 
+PRIMARY KEY (`thana_id`) 
+);
+ 
+INSERT INTO `district` (`district_id`, `district_name`, `division_id`) VALUES
+(1, 'Dhaka', '1'),
+(2, 'Faridpur', '1'),
+(3, 'Gazipur', '1'),
+(4, 'Tangail', '1'),
+(5, 'Barisal', '2'),
+(6, 'Barguna', '2'),
+(7, 'vola', '2'),
+(8, 'potuakhali', '2'),
+(9, 'Coxs Bazar', '3'),
+(10, 'Bandarban', '3'),
+(11, 'Rangamati', '3'),
+(12, 'Bagerhat', '4'),
+(13, 'Khulna', '4'),
+(14, 'kustia', '4'),
+(15, 'Bagura', '5'),
+(16, 'Pabna', '5'),
+(17, 'Dinajpur', '6'),
+(18, 'Rangpur', '6'),
+(19, 'Hobiganj', '7'),
+(20, 'Sunamganj', '7'),
+(21, 'Sylhet', '7'),
+(22, 'Jamalpur', '8'),
+(23, 'Sherpur', '8'),
+(24, 'Mymensing', '8');
+
+
+INSERT INTO `thana` (`thana_id`, `thana_name`, `district_id`) VALUES
+(1, 'Khilkhet', '1'),
+(2, 'Uttara', '1'),
+(3, 'Mirpur', '1'),
+(4, 'Tejgoun', '1'),
+(5, 'Mirzapur', '2'),
+(6, 'Derlduar', '2'),
+(7, 'Basail', '2'),
+(8, 'Modhupur', '2');
+ 
+INSERT INTO `division` (`division_id`, `division_name`) VALUES
+(1, 'Dhaka'),
+(2, 'Barisal'),
+(3, 'Chottogram'),
+(4, 'Khulna'),
+(5, 'Rajshahi'),
+(6, 'Rangpur'),
+(7, 'Sylhet'),
+(8, 'Mymensing');
